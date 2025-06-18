@@ -1,0 +1,48 @@
+@use "./mixins";
+
+.header {
+  @include mixins.flex();
+  padding: 20px 0;
+  &__logo {
+    width: 74px;
+  }
+  &__nav {
+    @include mixins.flex();
+    column-gap: 30px;
+    font-size: 19px;
+  }
+  &__socials {
+    @include mixins.flex();
+    column-gap: 20px;
+  }
+  &__social {
+    font-size: 24px;
+    transition: 0.2s transform linear, 0.2s color linear;
+    &--instagram {
+      font-size: 27px;
+    }
+    &:hover {
+      transform: scale(1.1) translateY(-2px);
+      color: black;
+    }
+  }
+  &__menu-button {
+    background-color: var(--color-primary);
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 36px;
+    border-radius: 4px;
+    display: none;
+  }
+}
+.nav__link {
+  transition: 0.2s color linear;
+  &:hover {
+    color: black;
+  }
+}
+.ham {
+  width: 36px;
+}
