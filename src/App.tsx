@@ -1,4 +1,4 @@
-import Carousel from "./components/Carousel";
+import About from "./components/About";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import "./main.scss";
@@ -9,6 +9,9 @@ const App = () => {
       <Header />
       <hr className="rule" />
       <Main />
+      <div className="container">
+        <About/>
+      </div>
     </div>
   );
 };

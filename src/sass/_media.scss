@@ -29,6 +29,12 @@
   .container {
     padding: 0 30px;
   }
+  .about__boxes {
+    row-gap: 20px;
+  }
+  .about__box {
+    width: 48%;
+  }
 }
 @media screen and (max-width: 850px) {
   .container {
@@ -114,6 +120,31 @@
   .main__item {
     flex-grow: 0;
     width: 49%;
+  }
+  .about {
+    &__title {
+      font-size: 38px;
+    }
+    &__lead {
+      font-size: 21px;
+    }
+    &__icon {
+      font-size: 45px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__title {
+    font-size: 35px;
+  }
+  .about__lead {
+    font-size: 19px;  
+  }
+  .about__text {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 440px) {
