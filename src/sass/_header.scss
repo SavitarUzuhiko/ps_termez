@@ -10,6 +10,7 @@
     @include mixins.flex();
     column-gap: 30px;
     font-size: 19px;
+    z-index: 100;
   }
   &__socials {
     @include mixins.flex();

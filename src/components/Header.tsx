@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BsTelegram } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
+import logoSource from "../assets/logo.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Header = () => {
     <div className="container">
       <header className="header flex">
         <a href="#" className="header__logo">
-          <img src="/src/assets/logo.png" alt="" className="header__logo-pic" />
+          <img src={logoSource} alt="" className="header__logo-pic" />
         </a>
         <nav
           onAnimationEnd={(e) => {
