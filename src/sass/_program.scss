@@ -1,0 +1,99 @@
+.program {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0 100%),
+    url("./assets/termez_ps_building.jpg");
+  background-position: top -120px center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 70px 0 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 120px;
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+    top: 90px;
+  }
+  &__box {
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    width: 24%;
+    color: black;
+    padding: 30px 20px 140px;
+    position: relative;
+    transition: 0.2s all linear;
+    background-image: url("./assets/two-smiling-children-wearing-school-uniforms-and-ties.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 78, 145, 0.9);
+        z-index: -1;
+        opacity: 0;
+        transition: 0.2s opacity linear;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 6px;
+      background-color: var(--color-primary);
+    }
+    &:hover {
+      color: white;
+      .program__content {
+        opacity: 1;
+      }
+    }
+  }
+  &__content {
+    opacity: 0;
+    transition: 0.2s all linear;
+  }
+  &__box-title {
+    font-size: 27px;
+    margin-bottom: 12px;
+  }
+  &__badge {
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}
