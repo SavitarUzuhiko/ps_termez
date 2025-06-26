@@ -2,6 +2,7 @@ import About from "./components/About";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Program from "./components/Program";
+import Team from "./components/Team";
 import "./main.scss";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <About />
       </div>
       <Program />
+      <Team />
     </div>
   );
 };
