@@ -1,0 +1,43 @@
+@use "./mixins";
+.footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 60px 0;
+  &__inner {
+    @include mixins.flex();
+    align-items: flex-start;
+  }
+  &__title {
+    font-size: 22px;
+  }
+  &__link {
+    font-size: 17px;
+    color: rgb(210, 210, 210);
+    &--social {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+  &__right {
+    @include mixins.flex();
+    column-gap: 150px;
+    align-items: flex-start;
+  }
+  &__navigation,
+  &__social {
+    @include mixins.flex();
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-start;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  &__pic {
+    width: 150px;
+  }
+}
