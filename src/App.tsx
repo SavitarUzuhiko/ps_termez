@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Feedback from "./components/Feedback";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Program from "./components/Program";
@@ -16,6 +17,7 @@ const App = () => {
       </div>
       <Program />
       <Team />
+      <Feedback />
     </div>
   );
 };
