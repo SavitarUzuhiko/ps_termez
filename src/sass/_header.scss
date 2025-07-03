@@ -11,6 +11,22 @@
     column-gap: 30px;
     font-size: 19px;
     z-index: 100;
+    &-underlay {
+      z-index: 99;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      backdrop-filter: blur(3px);
+      cursor: pointer;
+      display: none;
+      &--show {
+        display: block;
+        animation: showunderlay 0.2s linear forwards;
+      }
+    }
   }
   &__socials {
     @include mixins.flex();
@@ -28,14 +44,19 @@
     }
   }
   &__menu-button {
-    background-color: var(--color-primary);
+    column-gap: 3px;
+    align-items: center;
+    background-color: transparent;
+    color: var(--color-primary);
     padding: 0;
     border: 0;
     cursor: pointer;
-    width: 40px;
-    height: 36px;
-    border-radius: 4px;
     display: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  &__menu-icon {
+    font-size: 22px;
   }
 }
 .nav__link {
@@ -46,4 +67,12 @@
 }
 .ham {
   width: 36px;
+}
+@keyframes showunderlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

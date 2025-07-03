@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Program from "./components/Program";
 import Team from "./components/Team";
+import "./css/normalize.css";
 import "./main.scss";
 
 const App = () => {

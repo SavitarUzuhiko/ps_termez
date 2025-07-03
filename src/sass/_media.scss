@@ -103,14 +103,14 @@
     position: fixed;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    row-gap: 20px;
+    align-items: center;
+    row-gap: 23px;
     margin-left: 0;
     left: 0;
     top: 0;
     height: 100%;
-    width: 230px;
-    padding: 40px;
+    width: 280px;
+    padding: 65px 40px;
     background-color: var(--color-primary);
     display: none;
   }
@@ -121,7 +121,18 @@
     display: none;
   }
   .header__menu-button {
-    display: inline-block;
+    display: inline-flex;
+  }
+  .header__menu-close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 25px;
   }
   .show {
     display: flex;
