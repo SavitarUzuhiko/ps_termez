@@ -2,9 +2,12 @@
 
 .header {
   @include mixins.flex();
-  padding: 20px 0;
+  padding: 15px 0;
   &__logo {
     width: 74px;
+    &-pic {
+      width: 72px;
+    }
   }
   &__nav {
     @include mixins.flex();
@@ -42,6 +45,18 @@
       transform: scale(1.1) translateY(-2px);
       color: black;
     }
+  }
+  &__menu-close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
   }
   &__menu-button {
     column-gap: 3px;
