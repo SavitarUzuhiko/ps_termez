@@ -13,35 +13,41 @@
   &__title {
     color: var(--color-primary);
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-weight: 500;
   }
   &__lead {
-    font-size: 19px;
-    margin-bottom: 12px;
+    font-size: 21px;
+    margin-bottom: 20px;
   }
   &__link {
-    font-size: 16px;
-    padding: 8px 15px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 20px;
+    font-size: 17px;
+    padding: 10px 20px;
+    padding-left: 40px;
     border: 1px solid var(--color-primary);
-    border-radius: 8px;
+    border-radius: 50px;
     transition: 0.2s all linear;
     &:hover {
       background-color: var(--color-primary);
       color: white;
     }
+    &-icon {
+      font-size: 30px;
+    }
   }
 }
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: var(--color-primary);
-  color: white;
-  width: 40px;
-  height: 42px;
-  border-radius: 6px;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   &::after {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .swiper-pagination-bullet-active {
