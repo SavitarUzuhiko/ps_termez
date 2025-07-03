@@ -9,7 +9,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="container">
+    <div className="header-wrap">
+      <div className="container">
       <header className="header flex">
         <a href="#" className="header__logo">
           <img src={logoSource} alt="" className="header__logo-pic" />
@@ -68,6 +69,7 @@ const Header = () => {
           Menu
         </button>
       </header>
+    </div>
     </div>
   );
 };

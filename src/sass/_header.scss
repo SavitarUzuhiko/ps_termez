@@ -1,6 +1,13 @@
 @use "./mixins";
 
 .header {
+  &-wrap {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    box-shadow: 0 2px 10px var(--color-primary);
+  }
   @include mixins.flex();
   padding: 15px 0;
   &__logo {
