@@ -11,65 +11,73 @@ const Header = () => {
   return (
     <div className="header-wrap">
       <div className="container">
-      <header className="header flex">
-        <a href="#" className="header__logo">
-          <img src={logoSource} alt="" className="header__logo-pic" />
-        </a>
-        <div
-          onClick={() => setIsMenuOpen(false)}
-          className={`header__nav-underlay ${
-            isMenuOpen ? "header__nav-underlay--show" : ""
-          }`}
-        ></div>
-        <nav
-          onAnimationEnd={(e) => {
-            const target = e.target as HTMLDivElement;
-            if (target.matches(".hide")) {
-              console.log("ha");
-              target.classList.remove("show", "hide");
-            }
-          }}
-          className={`nav header__nav ${isMenuOpen ? "show" : "hide show"}`}
-        >
-          <button
+        <header className="header flex">
+          <a href="#" className="header__logo">
+            <img src={logoSource} alt="" className="header__logo-pic" />
+          </a>
+          <div
             onClick={() => setIsMenuOpen(false)}
-            className="header__menu-close"
+            className={`header__nav-underlay ${
+              isMenuOpen ? "header__nav-underlay--show" : ""
+            }`}
+          ></div>
+          <nav
+            onAnimationEnd={(e) => {
+              const target = e.target as HTMLDivElement;
+              if (target.matches(".hide")) {
+                console.log("ha");
+                target.classList.remove("show", "hide");
+              }
+            }}
+            className={`nav header__nav ${isMenuOpen ? "show" : "hide show"}`}
           >
-            <SlClose />
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="header__menu-close"
+            >
+              <SlClose />
+            </button>
+            <a href="#" className="nav__link">
+              Home
+            </a>
+            <a href="#" className="nav__link">
+              About
+            </a>
+            <a href="#" className="nav__link">
+              Groups
+            </a>
+            <a href="#" className="nav__link">
+              Teachers
+            </a>
+            <a href="#" className="nav__link">
+              Contact
+            </a>
+          </nav>
+          <div className="header__socials">
+            <a
+              target="_blank"
+              href="https://t.me/pmtermiz"
+              className="header__social"
+            >
+              <BsTelegram />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/pmtermiz/"
+              className="header__social header__social--instagram"
+            >
+              <RiInstagramFill />
+            </a>
+          </div>
+          <button
+            onClick={() => setIsMenuOpen(true)}
+            className="header__menu-button"
+          >
+            <HiOutlineBars3CenterLeft className="header__menu-icon" />
+            Menu
           </button>
-          <a href="#" className="nav__link">
-            Home
-          </a>
-          <a href="#" className="nav__link">
-            About
-          </a>
-          <a href="#" className="nav__link">
-            Groups
-          </a>
-          <a href="#" className="nav__link">
-            Teachers
-          </a>
-          <a href="#" className="nav__link">
-            Contact
-          </a>
-        </nav>
-        <div className="header__socials">
-          <a href="#" className="header__social">
-            <BsTelegram />
-          </a>
-          <a href="#" className="header__social header__social--instagram">
-            <RiInstagramFill />
-          </a>
-        </div>
-        <button
-          onClick={() => setIsMenuOpen(true)}
-          className="header__menu-button"
-        >
-          <HiOutlineBars3CenterLeft className="header__menu-icon" />
-          Menu
-        </button>
-      </header>
-    </div>
+        </header>
+      </div>
     </div>
   );
 };

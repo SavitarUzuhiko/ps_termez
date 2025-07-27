@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Program from "./components/Program";
+import StudentLife from "./components/StudentLife";
 import Team from "./components/Team";
 import "./css/normalize.css";
 import "./main.scss";
@@ -19,6 +20,7 @@ const App = () => {
       </div>
       <Program />
       <Team />
+      <StudentLife />
       <Feedback />
       <Footer />
     </div>

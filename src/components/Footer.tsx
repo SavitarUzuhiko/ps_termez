@@ -15,8 +15,9 @@ const Footer = () => {
             <div className="footer__part">
               <div className="footer__navigation footer__navigation--mb">
                 <a
-                  href="#"
+                  href="https://yandex.uz/maps/-/CHHlRPoN"
                   className="footer__link footer__link--flex footer__link--flex-map"
+                  target="_blank"
                 >
                   <span className="footer__link-circle">
                     <IoLocation />
@@ -25,13 +26,19 @@ const Footer = () => {
                     Surkhandarya, Termez, Hakim at-Termiziy st., 34b
                   </span>
                 </a>
-                <a href="#" className="footer__link footer__link--flex">
+                <a
+                  href="tel:+998554520922"
+                  className="footer__link footer__link--flex"
+                >
                   <span className="footer__link-circle">
                     <IoCallSharp />
                   </span>
                   <span className="footer__link-text">+998554520922</span>
                 </a>
-                <a href="#" className="footer__link footer__link--flex">
+                <a
+                  href="mailto:info@pstmz.uz"
+                  className="footer__link footer__link--flex"
+                >
                   <span className="footer__link-circle">
                     <FaEnvelopeOpenText />
                   </span>
@@ -39,13 +46,25 @@ const Footer = () => {
                 </a>
               </div>
               <div className="footer__social">
-                <a href="#" className="footer__link footer__link--social">
+                <a
+                  target="_blank"
+                  href="https://t.me/pmtermiz"
+                  className="footer__link footer__link--social"
+                >
                   <i className="footer__icon fa-brands fa-telegram"></i>
                 </a>
-                <a href="#" className="footer__link footer__link--social">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/pmtermiz/"
+                  className="footer__link footer__link--social"
+                >
                   <i className="footer__icon fa-brands fa-instagram"></i>
                 </a>
-                <a href="#" className="footer__link footer__link--social">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@termizshahridagiprezidentm4414"
+                  className="footer__link footer__link--social"
+                >
                   <i className="footer__icon fa-brands fa-youtube"></i>
                 </a>
               </div>
