@@ -1,6 +1,7 @@
 @use "./mixins";
 .footer {
   background-color: var(--color-primary);
+  color: white;
   & .container {
     padding: 0;
   }
@@ -10,7 +11,6 @@
   }
   &__inner {
     width: 55%;
-    color: white;
     padding: 60px 60px 100px 120px;
   }
   &__title {
@@ -54,8 +54,10 @@
       flex-shrink: 0;
     }
   }
-  &__logo {
+  &__logo-wrap {
     margin-bottom: 40px;
+  }
+  &__logo {
     display: inline-block;
   }
   &__pic {
@@ -77,7 +79,7 @@
     row-gap: 15px;
     align-items: flex-start;
     &--mb {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
   }
   &__social {
@@ -105,6 +107,13 @@
       height: 100%;
       min-height: 500px;
       border: 0;
+    }
+  }
+  &__text {
+    &--mobile {
+      width: 100%;
+      padding: 20px;
+      display: none;
     }
   }
 }

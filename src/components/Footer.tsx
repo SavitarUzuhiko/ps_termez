@@ -8,9 +8,11 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__flexbox">
         <div className="footer__inner">
-          <a href="#" className="footer__logo">
-            <img src={logoSrc} alt="footer logo" className="footer__pic" />
-          </a>
+          <div className="footer__logo-wrap">
+            <a href="#" className="footer__logo">
+              <img src={logoSrc} alt="footer logo" className="footer__pic" />
+            </a>
+          </div>
           <div className="footer__parts">
             <div className="footer__part">
               <div className="footer__navigation footer__navigation--mb">
@@ -86,7 +88,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <p className="footer__text">
+          <p className="footer__text footer__text--desktop">
             &copy; 2025 Termez Presidential School. All rights reserved.
           </p>
         </div>
@@ -103,6 +105,9 @@ const Footer = () => {
             allowFullScreen={true}
           ></iframe>
         </div>
+        <p className="footer__text--mobile">
+            &copy; 2025 Termez Presidential School. All rights reserved.
+          </p>
       </div>
     </footer>
   );
