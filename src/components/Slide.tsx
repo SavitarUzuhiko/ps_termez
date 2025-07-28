@@ -1,5 +1,6 @@
 import sliderImageSource from "../assets/slider-photo.jpg";
 import { BsArrowRightCircle } from "react-icons/bs";
+import { PiArrowCircleRightThin } from "react-icons/pi";
 
 const Slide = () => {
   return (
@@ -11,7 +12,8 @@ const Slide = () => {
           laudantium.
         </p>
         <a href="#" className="slide__link">
-          More <BsArrowRightCircle className="slide__link-icon" />
+          More
+          <PiArrowCircleRightThin className="slide__arrow" />
         </a>
       </div>
       <img src={sliderImageSource} alt="slide photo" className="slide__image" />
