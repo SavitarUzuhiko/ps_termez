@@ -1,7 +1,7 @@
-import logoSrc from "../assets/logo.png";
-import { IoLocation } from "react-icons/io5";
-import { IoCallSharp } from "react-icons/io5";
 import { FaEnvelopeOpenText } from "react-icons/fa";
+import { IoCallSharp, IoLocation } from "react-icons/io5";
+import { PiInstagramLogoLight, PiTelegramLogoLight, PiYoutubeLogoLight } from "react-icons/pi";
+import logoSrc from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -50,24 +50,24 @@ const Footer = () => {
               <div className="footer__social">
                 <a
                   target="_blank"
-                  href="https://t.me/pmtermiz"
-                  className="footer__link footer__link--social"
-                >
-                  <i className="footer__icon fa-brands fa-telegram"></i>
-                </a>
-                <a
-                  target="_blank"
                   href="https://www.instagram.com/pmtermiz/"
                   className="footer__link footer__link--social"
                 >
-                  <i className="footer__icon fa-brands fa-instagram"></i>
+                  <PiInstagramLogoLight />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://t.me/pmtermiz"
+                  className="footer__link footer__link--social"
+                >
+                  <PiTelegramLogoLight />
                 </a>
                 <a
                   target="_blank"
                   href="https://www.youtube.com/@termizshahridagiprezidentm4414"
                   className="footer__link footer__link--social"
                 >
-                  <i className="footer__icon fa-brands fa-youtube"></i>
+                  <PiYoutubeLogoLight />
                 </a>
               </div>
             </div>
@@ -106,8 +106,8 @@ const Footer = () => {
           ></iframe>
         </div>
         <p className="footer__text--mobile">
-            &copy; 2025 Termez Presidential School. All rights reserved.
-          </p>
+          &copy; 2025 Termez Presidential School. All rights reserved.
+        </p>
       </div>
     </footer>
   );

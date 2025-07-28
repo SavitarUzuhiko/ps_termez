@@ -1,4 +1,3 @@
-import source from "../assets/teacher_avatar.jpg";
 import teamData from "../data/teamData";
 
 const Team = () => {

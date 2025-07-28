@@ -5,12 +5,14 @@ import { IoColorPaletteSharp } from "react-icons/io5";
 import { RiCalendarEventFill } from "react-icons/ri";
 import { IoLibrarySharp } from "react-icons/io5";
 import { FaChevronRight } from "react-icons/fa";
+// import { DiAtom } from "react-icons/di";
+
 import categories from "../data/scategories";
 import studentLifeData from "../data/slife";
 import { useState, type JSX } from "react";
 
 const StudentLife = () => {
-  const [cat, setCat] = useState("creative");
+  const [cat, setCat] = useState("sport");
 
   const iconMap: { [key: string]: JSX.Element } = {
     FcIdea: <FcIdea />,

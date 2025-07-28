@@ -1,7 +1,6 @@
 @use "./mixins";
 
 .main {
-  // background-color: rgb(210, 210, 210);
   background-image: radial-gradient(
     circle at right top, var(--color-primary) 0 15%,
     rgb(210, 210, 210) 15%

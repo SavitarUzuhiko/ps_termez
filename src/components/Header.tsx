@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
+import { PiInstagramLogoLight, PiTelegramLogoLight } from "react-icons/pi";
 import { SlClose } from "react-icons/sl";
-import { BsTelegram } from "react-icons/bs";
-import { RiInstagramFill } from "react-icons/ri";
 import logoSource from "../assets/logo.png";
 
 const Header = () => {
@@ -56,17 +55,17 @@ const Header = () => {
           <div className="header__socials">
             <a
               target="_blank"
-              href="https://t.me/pmtermiz"
-              className="header__social"
-            >
-              <BsTelegram />
-            </a>
-            <a
-              target="_blank"
               href="https://www.instagram.com/pmtermiz/"
               className="header__social header__social--instagram"
             >
-              <RiInstagramFill />
+              <PiInstagramLogoLight />
+            </a>
+            <a
+              target="_blank"
+              href="https://t.me/pmtermiz"
+              className="header__social"
+            >
+              <PiTelegramLogoLight/>
             </a>
           </div>
           <button
