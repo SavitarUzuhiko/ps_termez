@@ -1,32 +1,28 @@
 @use "./mixins";
+
 .feedbacks__wrapper {
   margin-bottom: 60px;
 }
 .feedbacks__title {
+  font-size: 36px;
   text-align: center;
   margin-bottom: 30px;
 }
 .feedback {
-  border: 1px solid var(--color-primary);
-  box-shadow: 0 0 10px 2px var(--color-primary);
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
+  border-left: 15px solid black;
+  background-color: var(--color-lighter);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 36px;
   height: 100%;
 
   &__title {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  &__rating {
+    font-size: 27px;
     margin-bottom: 20px;
-    color: orangered;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    column-gap: 5px;
+  }
+  &__text {
+    font-size: 17px;
+    line-height: 1.6;
   }
   &__outer {
     padding: 12px;
