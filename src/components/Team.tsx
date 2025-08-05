@@ -5,10 +5,9 @@ const Team = () => {
     <section className="team">
       <div className="container">
         <div className="team__textbox">
-          <h2 className="team__title">Meet our team</h2>
+          <h2 className="team__title title-h2">Meet our team</h2>
           <p className="team__subtitle">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam ab
-            laudantium quae quos perspiciatis iure nesciunt quod.
+            Termez Presidential School's team is a diverse group of talented teachers and professional administrators.
           </p>
           <a href="#" className="team__more">
             All teachers

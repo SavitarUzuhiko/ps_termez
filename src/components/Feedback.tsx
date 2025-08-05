@@ -33,7 +33,7 @@ const Feedback = () => {
     <div className="container">
       <div className="feedbacks__wrapper">
         <div className="feedbacks__header">
-          <h2 className="feedbacks__title">Feedback</h2>
+          <h2 className="feedbacks__title title-h2">Feedback</h2>
           <div className="feedbacks__buttons">
             <MyCustomPrevButton swiper={swiperInstance} />
             <MyCustomNextButton swiper={swiperInstance} />

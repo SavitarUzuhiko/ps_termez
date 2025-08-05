@@ -1,15 +1,13 @@
-import { FcIdea } from "react-icons/fc";
-import { GiSoccerBall } from "react-icons/gi";
-import { GiCommercialAirplane } from "react-icons/gi";
-import { IoColorPaletteSharp } from "react-icons/io5";
-import { RiCalendarEventFill } from "react-icons/ri";
-import { IoLibrarySharp } from "react-icons/io5";
 import { FaChevronRight } from "react-icons/fa";
+import { FcIdea } from "react-icons/fc";
+import { GiCommercialAirplane, GiSoccerBall } from "react-icons/gi";
+import { IoColorPaletteSharp, IoLibrarySharp } from "react-icons/io5";
+import { RiCalendarEventFill } from "react-icons/ri";
 // import { DiAtom } from "react-icons/di";
 
+import { useState, type JSX } from "react";
 import categories from "../data/scategories";
 import studentLifeData from "../data/slife";
-import { useState, type JSX } from "react";
 
 const StudentLife = () => {
   const [cat, setCat] = useState("sport");
@@ -27,7 +25,7 @@ const StudentLife = () => {
   return (
     <section className="slife">
       <div className="container">
-        <h2 className="slife__title">Student Life</h2>
+        <h2 className="slife__title title-h2">Student Life</h2>
       </div>
       <div className="slife__flex container">
         <div className="slife__categories container">

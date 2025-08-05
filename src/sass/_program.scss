@@ -9,6 +9,7 @@
   color: white;
   text-align: center;
   margin-bottom: 120px;
+  
   &::after {
     z-index: -1;
     content: "";
@@ -21,7 +22,6 @@
   }
   &__title {
     margin-bottom: 20px;
-    font-size: 32px;
   }
   &__boxes {
     display: flex;

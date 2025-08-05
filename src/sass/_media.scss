@@ -104,6 +104,18 @@
     padding: 40px 20px;
     padding-left: 30px;
   }
+  .careers {
+    &__content, &__image {
+      width: 100%;
+    }
+    &__content {
+      margin-bottom: 30px;
+    }
+    &__image {
+      height: 400px;
+      object-fit: cover;
+    }
+  }
 }
 @media screen and (max-width: 960px) {
   .footer__parts {
@@ -284,6 +296,10 @@
       font-size: 17px;
     }
   }
+  .careers__image {
+    height: 270px;
+    box-shadow: 12px 12px var(--color-primary);
+  }
 }
 @media screen and (max-width: 630px) {
   .footer__logo {
@@ -339,6 +355,9 @@
   }
   .about__text {
     font-size: 16px;
+  }
+  .careers__image {
+    height: 200px;
   }
 }
 @media screen and (max-width: 460px) {

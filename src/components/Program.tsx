@@ -2,7 +2,7 @@ const Program = () => {
   return (
     <div className="program">
       <div className="container">
-        <h2 className="program__title">Educational programme</h2>
+        <h2 className="program__title title-h2">Educational programme</h2>
         <p className="program__lead">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
           quidem deleniti recusandae modi quasi. Deleniti.

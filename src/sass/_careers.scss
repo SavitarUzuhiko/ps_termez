@@ -1,0 +1,33 @@
+@use "./mixins";
+
+.careers {
+  @include mixins.flex();
+  margin-bottom: 70px;
+
+  &__image {
+    width: 44%;
+    border-radius: 15px;
+    box-shadow: 20px 20px var(--color-primary);
+  }
+  &__content {
+    width: 50%;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  &__more {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    background-image: linear-gradient(110deg, black, var(--color-primary) 50%);
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 15px;
+  }
+}
