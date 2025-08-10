@@ -1,3 +1,7 @@
+import src1 from "../assets/school1.jpg";
+import src2 from "../assets/school2.jpg";
+import src3 from "../assets/school3.jpg";
+
 const About = () => {
   return (
     <section className="about">
@@ -11,31 +15,10 @@ const About = () => {
         world's best universities. We nurture leaders who can be competitive on
         the global stage."
       </p>
-      <div className="about__boxes">
-        <article className="about__box">
-          <i className="about__icon fa-solid fa-school-circle-check"></i>
-          <p className="about__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </article>
-        <article className="about__box">
-          <i className="about__icon fa-solid fa-school-circle-check"></i>
-          <p className="about__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </article>
-        <article className="about__box">
-          <i className="about__icon fa-solid fa-school-circle-check"></i>
-          <p className="about__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </article>
-        <article className="about__box">
-          <i className="about__icon fa-solid fa-school-circle-check"></i>
-          <p className="about__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </article>
+      <div className="about__pics">
+        <img src={src1} alt="" className="about__pic" />
+        <img src={src2} alt="" className="about__pic" />
+        <img src={src3} alt="" className="about__pic" />
       </div>
     </section>
   );

@@ -5,10 +5,10 @@
   padding: 90px 0 110px;
 
   &__title {
-    font-size: 60px;
-    text-transform: uppercase;
+    font-size: 64px;
     color: var(--color-primary);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    font-family: "Bitter", serif;
   }
   &__lead {
     font-size: 24px;
@@ -29,5 +29,15 @@
   &__text {
     font-size: 19px;
     line-height: 1.5;
+  }
+  &__pics {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__pic {
+    width: 31%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }

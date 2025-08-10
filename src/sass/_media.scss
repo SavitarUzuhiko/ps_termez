@@ -272,6 +272,19 @@
     background-color: rgb(220, 220, 220);
   }
 }
+@media screen and (max-width: 800px){
+  .about {
+    padding: 35px 0 70px;
+  }
+  .about__pics {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 6%;
+  }
+  .about__pic {
+    width: 47%;
+  }
+}
 @media screen and (max-width: 750px) {
   .main__list {
     column-gap: 0;
