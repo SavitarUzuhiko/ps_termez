@@ -1,5 +1,4 @@
 import sliderImageSource from "../assets/slider-photo.jpg";
-import { BsArrowRightCircle } from "react-icons/bs";
 import { PiArrowCircleRightThin } from "react-icons/pi";
 
 const Slide = () => {
