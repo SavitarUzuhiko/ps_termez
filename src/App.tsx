@@ -9,6 +9,7 @@ import StudentLife from "./components/StudentLife";
 import Team from "./components/Team";
 import "./css/normalize.css";
 import "./main.scss";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -25,6 +26,8 @@ const App = () => {
       <Careers />
       <Feedback />
       <Footer />
+
+      <ScrollToTop />
     </div>
   );
 };

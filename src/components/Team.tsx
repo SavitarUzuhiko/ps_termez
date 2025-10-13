@@ -17,7 +17,7 @@ const Team = () => {
       <div className="members">
         <div className="members__inner">
           {teamData.map((m) => (
-            <article className="member">
+            <article key={m.name+m.role} className="member">
               <img src={m.image} alt="team member" className="member__image" />
               <div className="member__box">
                 <h3 className="member__name">{m.name}</h3>

@@ -83,6 +83,8 @@
   }
 }
 .nav__link {
+  color:darkblue;
+  cursor: pointer;
   transition: 0.2s color linear;
   &:hover {
     color: black;
