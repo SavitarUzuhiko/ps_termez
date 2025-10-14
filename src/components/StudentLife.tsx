@@ -1,26 +1,11 @@
 import { FaChevronRight } from "react-icons/fa";
-import { FcIdea } from "react-icons/fc";
-import { GiCommercialAirplane, GiSoccerBall } from "react-icons/gi";
-import { IoColorPaletteSharp, IoLibrarySharp } from "react-icons/io5";
-import { RiCalendarEventFill } from "react-icons/ri";
-// import { DiAtom } from "react-icons/di";
 
-import { useState, type JSX } from "react";
+import { useState } from "react";
 import categories from "../data/scategories";
 import studentLifeData from "../data/slife";
 
 const StudentLife = () => {
   const [cat, setCat] = useState("sport");
-
-  const iconMap: { [key: string]: JSX.Element } = {
-    FcIdea: <FcIdea />,
-    GiSoccerBall: <GiSoccerBall />,
-    GiCommercialAirplane: <GiCommercialAirplane />,
-    IoColorPaletteSharp: <IoColorPaletteSharp />,
-    RiCalendarEventFill: <RiCalendarEventFill />,
-    IoLibrarySharp: <IoLibrarySharp />,
-    FaChevronRight: <FaChevronRight />,
-  };
 
   return (
     <section className="slife">
@@ -39,7 +24,7 @@ const StudentLife = () => {
             >
               <div className="slife__iconbox">
                 <span className={`slife__icon slife__icon--${c.slug}`}>
-                  {iconMap[c.icon]}
+                  <c.icon />
                 </span>
               </div>
               <h3 className="slife__category-name">{c.name}</h3>

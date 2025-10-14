@@ -1,24 +1,16 @@
-import src1 from "../assets/school1.jpg";
-import src2 from "../assets/school2.jpg";
-import src3 from "../assets/school3.jpg";
+import { aboutData } from "../data/about";
 
 const About = () => {
   return (
     <section className="about">
-      <h1 className="about__title">Termez Presidential School</h1>
+      <h1 className="about__title">{aboutData.title}</h1>
       <p className="about__lead">
-        The Presidential School is a specialized state general education
-        institution whose activities are focused on identifying and educating
-        gifted children to cultivate highly qualified specialists. Our aim is
-        "to prepare the nation's future leaders and students who will win
-        international olympiads and competitions, and gain admission to the
-        world's best universities. We nurture leaders who can be competitive on
-        the global stage."
+        {aboutData.text}
       </p>
       <div className="about__pics">
-        <img src={src1} alt="" className="about__pic" />
-        <img src={src2} alt="" className="about__pic" />
-        <img src={src3} alt="" className="about__pic" />
+        {aboutData.pics.map((pic) => (
+          <img src={pic.src} alt={pic.alt} className="about__pic" key={pic.src} />
+        ))}
       </div>
     </section>
   );

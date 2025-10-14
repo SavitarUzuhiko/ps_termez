@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/swiper-bundle.css";
 import Slide from "./Slide";
+import { heroSliderData } from "../data/hero_slider";
 
 export default () => {
   return (
@@ -14,18 +15,11 @@ export default () => {
       navigation
       pagination={{ clickable: true }}
     >
-      <SwiperSlide>
-        <Slide />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Slide />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Slide />
-      </SwiperSlide>
-      <SwiperSlide>
-        <Slide />
-      </SwiperSlide>
+      {heroSliderData.map((slide) => (
+        <SwiperSlide key={slide.title}>
+          <Slide {...slide} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

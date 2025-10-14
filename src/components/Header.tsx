@@ -1,41 +1,21 @@
 import { useState } from 'react';
 import { HiOutlineBars3CenterLeft } from 'react-icons/hi2';
-import { PiInstagramLogoLight, PiTelegramLogoLight } from 'react-icons/pi';
 import { SlClose } from 'react-icons/sl';
 import logoSource from '../assets/logo.png';
+import { externalLinks, headerNavigateData , scrollTo} from '../data/header';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const scrollTo = (target: string | number, minus?: number) => {
-    if (typeof target === 'string') {
-      // Scroll to element by selector
-      const element = document.querySelector(target);
-      if (element) {
-        const elementPosition =
-          element.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - (minus || 0);
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-        });
-      }
-    } else {
-      const offsetPosition = target - (minus || 0);
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
-    setIsMenuOpen(false);
-  };
 
   return (
     <div className='header-wrap'>
       <div className='container'>
         <header className='header flex'>
-          <span onClick={() => scrollTo(0)} className='header__logo' style={{cursor:'pointer'}}>
+          <span
+            onClick={() => scrollTo(0, setIsMenuOpen)}
+            className='header__logo'
+            style={{ cursor: 'pointer' }}
+          >
             <img src={logoSource} alt='' className='header__logo-pic' />
           </span>
           <div
@@ -60,40 +40,25 @@ const Header = () => {
             >
               <SlClose />
             </button>
-            <span onClick={() => scrollTo(0)} className='nav__link'>
-              Home
-            </span>
-            <span onClick={() => scrollTo('.about')} className='nav__link'>
-              About
-            </span>
-            <span
-              onClick={() => scrollTo('.program', 100)}
-              className='nav__link'
-            >
-              Groups
-            </span>
-            <span onClick={() => scrollTo('.team', 130)} className='nav__link'>
-              Teachers
-            </span>
-            <span onClick={() => scrollTo('.footer')} className='nav__link'>
-              Contact
-            </span>
+            {headerNavigateData.map((item) => (
+                <span
+                  onClick={() => scrollTo(item.to, setIsMenuOpen, item.addToTop)}
+                  className='nav__link'
+                >
+                  {item.name}
+                </span>
+            ))}
           </nav>
           <div className='header__socials'>
-            <a
-              target='_blank'
-              href='https://www.instagram.com/pmtermiz/'
-              className='header__social header__social--instagram'
-            >
-              <PiInstagramLogoLight />
-            </a>
-            <a
-              target='_blank'
-              href='https://t.me/pmtermiz'
-              className='header__social'
-            >
-              <PiTelegramLogoLight />
-            </a>
+            {externalLinks.map((item) => (
+              <a
+                target='_blank'
+                href={item.href}
+                className={item.additionalClass}
+              >
+                <item.icon />
+              </a>
+            ))}
           </div>
           <button
             onClick={() => setIsMenuOpen(true)}
