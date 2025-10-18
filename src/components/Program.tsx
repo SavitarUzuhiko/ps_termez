@@ -79,7 +79,7 @@ const Program = () => {
         >
           {programCards.map((card) => (
             <SwiperSlide key={card.id} style={{ height: 'auto'}}>
-              <article className="program__box" style={{ height: '100%' }}>
+              <article className="program__box" style={{ height: '100%' , width:'100%'}}>
                 <h3 className="program__box-title">{card.title}</h3>
                 <div className="program__content">
                   <span className="program__badge">{card.badge}</span>

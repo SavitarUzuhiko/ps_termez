@@ -135,7 +135,7 @@
     cursor: pointer;
     background-color: rgb(210, 210, 210);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    width: 100%;
+    // width: 100%;
     height: 350px;
     color: black;
     padding: 30px 20px 140px;
@@ -149,7 +149,7 @@
     overflow: hidden;
     z-index: 1;
     transform: translateY(0) scale(1);
-    margin: 0 auto;
+    // margin: 0 auto;
     
     &:hover {
       transform: translateY(-10px) scale(1.02);
@@ -215,7 +215,6 @@
   
   &__box-title {
     font-size: 27px;
-    margin-bottom: 12px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 600;
   }
@@ -238,96 +237,5 @@
     font-size: 17px;
     line-height: 1.5;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  // Responsive styles
-  @media (max-width: 1200px) {
-    &__boxes {
-      padding: 0 40px;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    &__boxes {
-      padding: 0 30px;
-      
-      .swiper-button-next,
-      .swiper-button-prev {
-        width: 40px;
-        height: 40px;
-        margin-top: -20px;
-        
-        &:after {
-          font-size: 16px;
-        }
-      }
-      
-      .swiper-button-prev {
-        left: 5px;
-      }
-      
-      .swiper-button-next {
-        right: 5px;
-      }
-    }
-    
-    &__box {
-      height: 320px;
-      padding: 25px 15px 120px;
-    }
-    
-    &__box-title {
-      font-size: 24px;
-    }
-    
-    &__badge {
-      font-size: 15px;
-      padding: 4px 25px;
-    }
-    
-    &__text {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 640px) {
-    padding: 50px 0 60px;
-    margin-bottom: 60px;
-    
-    &__boxes {
-      top: 40px;
-      padding: 0 20px;
-      margin-bottom: 40px;
-      
-      .swiper-button-next,
-      .swiper-button-prev {
-        display: none; // Hide navigation on mobile
-      }
-      
-      .swiper-pagination {
-        bottom: -40px;
-        position: relative;
-      }
-    }
-    
-    &__box {
-      height: 280px;
-      padding: 20px 15px 100px;
-    }
-    
-    &__box-title {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    
-    &__badge {
-      font-size: 14px;
-      padding: 3px 20px;
-      margin-bottom: 15px;
-    }
-    
-    &__text {
-      font-size: 14px;
-    }
   }
 }

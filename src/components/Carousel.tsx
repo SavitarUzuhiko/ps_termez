@@ -16,7 +16,7 @@ export default () => {
       pagination={{ clickable: true }}
     >
       {heroSliderData.map((slide) => (
-        <SwiperSlide key={slide.title}>
+        <SwiperSlide key={slide.id+slide.title}>
           <Slide {...slide} />
         </SwiperSlide>
       ))}

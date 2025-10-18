@@ -80,6 +80,7 @@ const Footer = () => {
               <div className='footer__navigation'>
                 {headerNavigateData.map((item) => (
                   <span
+                    key={item.name + item.addToTop}
                     onClick={() => scrollTo(item.to, () => {}, item.addToTop)}
                     className='footer__link'
                   >

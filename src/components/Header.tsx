@@ -41,7 +41,7 @@ const Header = () => {
               <SlClose />
             </button>
             {headerNavigateData.map((item) => (
-                <span
+                <span key={item.name+item.addToTop}
                   onClick={() => scrollTo(item.to, setIsMenuOpen, item.addToTop)}
                   className='nav__link'
                 >
@@ -51,7 +51,7 @@ const Header = () => {
           </nav>
           <div className='header__socials'>
             {externalLinks.map((item) => (
-              <a
+              <a key={item.name+item.icon}
                 target='_blank'
                 href={item.href}
                 className={item.additionalClass}
