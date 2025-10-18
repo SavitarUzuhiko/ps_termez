@@ -25,17 +25,21 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    opacity: 0.6;
-    width: 30px;
-    height: 32px;
-    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    right: 0px;
     &::after {
-      font-size: 17px;
+      font-size: 16px;
     }
   }
+  .swiper-button-prev {
+    left: 0px;
+  }
   .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
+    width: 50px;
+    height: 8px;
+    margin: 0 3px;
   }
   .footer__inner {
     padding: 40px 40px 50px 60px;
@@ -295,7 +299,12 @@
   }
   .swiper-button-prev,
   .swiper-button-next {
-    opacity: 1;
+    width: 35px;
+    height: 35px;
+    margin-top: -17px;
+    &::after {
+      font-size: 14px;
+    }
   }
   .swiper-pagination-bullets {
     display: none;
