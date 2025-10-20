@@ -1,4 +1,3 @@
-import sliderImageSource from "../assets/slider-photo.jpg";
 import image1 from '../assets/newImages/IMG_9616.jpg';
 import image2 from '../assets/newImages/IMG_9038.jpg';
 import image3 from '../assets/newImages/IMG_8283.jpg';
