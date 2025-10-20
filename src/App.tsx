@@ -23,7 +23,7 @@ const App = () => {
       <Team />
       <StudentLife />
       {/* <Careers /> */}
-      <Feedback />
+      {/* <Feedback /> */}
       <Footer />
 
       <ScrollToTop />

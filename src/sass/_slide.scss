@@ -1,13 +1,13 @@
 @use "./mixins";
 
 .slide {
-  padding: 64px;
+  padding: 70px;
   @include mixins.flex();
   &__content {
-    width: 62%;
+    width: 45%;
   }
   &__image {
-    width: 35%;
+    width: 55%;
     border-radius: 20px;
   }
   &__title {

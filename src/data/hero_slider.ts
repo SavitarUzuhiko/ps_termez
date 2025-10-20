@@ -1,4 +1,9 @@
 import sliderImageSource from "../assets/slider-photo.jpg";
+import image1 from '../assets/newImages/IMG_9616.jpg';
+import image2 from '../assets/newImages/IMG_9038.jpg';
+import image3 from '../assets/newImages/IMG_8283.jpg';
+import image4 from '../assets/newImages/IMG_8847.jpg';
+
 export const heroSliderData = [
   {
     id:0,
@@ -7,7 +12,7 @@ export const heroSliderData = [
           laudantium.`,
     link: '#',
     linkText: 'More',
-    image: sliderImageSource,
+    image: image1,
   },
   {
     id:1,
@@ -16,7 +21,7 @@ export const heroSliderData = [
           laudantium.`,
     link: '#',
     linkText: 'More',
-    image: sliderImageSource,
+    image: image2,
   },
   {
     id:2,
@@ -25,7 +30,7 @@ export const heroSliderData = [
           laudantium.`,
     link: '#',
     linkText: 'More',
-    image: sliderImageSource,
+    image: image3,
   },
   {
     id:3,
@@ -34,6 +39,6 @@ export const heroSliderData = [
           laudantium.`,
     link: '#',
     linkText: 'More',
-    image: sliderImageSource,
+    image: image4,
   },
 ];

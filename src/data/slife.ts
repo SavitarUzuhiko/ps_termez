@@ -1,9 +1,8 @@
-import creativeImage from "../assets/school_children.jpg";
-import sportsImage from "../assets/school_sports.jpg"
+import sportsImage from '../assets/newImages/Student_life.jpg'
 
 const studentLifeData = {
   creative: {
-    img: creativeImage,
+    img: sportsImage,
     text: "Creative. Explore the latest in technology including AI, software development, gadgets, and innovations that are shaping the future of the digital world. Stay updated with insightful articles and in-depth reviews.",
     url: "/categories/technology",
   },

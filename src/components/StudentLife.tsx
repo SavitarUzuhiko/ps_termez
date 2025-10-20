@@ -1,5 +1,3 @@
-import { FaChevronRight } from "react-icons/fa";
-
 import { useState } from "react";
 import categories from "../data/scategories";
 import studentLifeData from "../data/slife";
@@ -40,9 +38,9 @@ const StudentLife = () => {
           <p className="slife__text">
             {studentLifeData[cat as keyof typeof studentLifeData].text}
           </p>
-          <a href="#" className="slide__link slife__link">
+          {/* <a href="#" className="slide__link slife__link">
             More <FaChevronRight />
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
