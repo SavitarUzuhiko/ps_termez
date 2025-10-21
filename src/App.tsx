@@ -1,5 +1,4 @@
 import About from "./components/About";
-import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
