@@ -1,7 +1,7 @@
 import source1 from "../assets/team_man.jpg";
 import source2 from "../assets/team_woman.jpg";
 
-const filter = ['All teachers','Math Teacher','English Teacher','Science Teacher','Music Teacher','Social Studies Teacher','Homeroom Teacher','School Nurse Teacher','ESL Teacher','Physical Education Teacher','Grade 2 Homeroom Teacher'];
+const filter = ['All teachers','Math Teacher','English Teacher'];
 const teamData = [
   { name: "To'lqin Jumayev", role: "Math Teacher", image: source1 },
   { name: "Marhabo Xolmatova", role: "English Teacher", image: source2 },
