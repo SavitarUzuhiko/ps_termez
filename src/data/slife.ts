@@ -1,4 +1,4 @@
-import sportsImage from '../assets/newImages/Student_life.jpg'
+import sportsImage from '../assets/newImages/Student_life.webp'
 
 const studentLifeData = {
   creative: {

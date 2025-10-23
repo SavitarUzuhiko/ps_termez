@@ -1,6 +1,6 @@
-import src1 from '../assets/newImages/about/IMG_9578.jpg';
-import src2 from '../assets/newImages/about/060A7471.jpg';
-import src3 from '../assets/newImages/about/IMG_3144.jpg';
+import src1 from '../assets/newImages/IMG_9578.webp';
+import src2 from '../assets/newImages/060A7471.webp';
+import src3 from '../assets/newImages/IMG_3144.webp';
 
 export const aboutData = {
   title: 'Termez Presidential School',
