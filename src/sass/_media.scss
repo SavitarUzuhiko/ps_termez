@@ -808,6 +808,32 @@
       backdrop-filter: blur(1.8rem);
     }
   }
+
+  // Disable swiper navigation button hovers on mobile
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 0.95) !important;
+    transform: none !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+    color: var(--color-primary) !important;
+  }
+
+  // Program swiper buttons
+  .program__boxes .swiper-button-next:hover,
+  .program__boxes .swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 0.95) !important;
+    transform: none !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+    color: var(--color-primary) !important;
+  }
+
+  // Main carousel swiper buttons
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: none !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  }
 }
 
 // Accessibility: Respect user's motion preferences

@@ -28,7 +28,6 @@ const Header = () => {
             onAnimationEnd={(e) => {
               const target = e.target as HTMLDivElement;
               if (target.matches('.hide')) {
-                console.log('ha');
                 target.classList.remove('show', 'hide');
               }
             }}
